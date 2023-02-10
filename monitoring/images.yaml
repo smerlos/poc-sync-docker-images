@@ -4,14 +4,14 @@ images:
     tag:
       - "v0.9.1"
     destinations:
-      - registry.sighup.io/fury/prometheus-adapter/prometheus-adapter
+      - ghcr.io/smerlos/prometheus-adapter/prometheus-adapter
 
   - name: Prometheus adapter direcxman (old version) [Fury Monitoring Module]
     source: quay.io/coreos/k8s-prometheus-adapter-amd64
     tag:
       - "v0.5.0"
     destinations:
-      - registry.sighup.io/fury/prometheus-adapter/prometheus-adapter
+      - ghcr.io/smerlos/prometheus-adapter/prometheus-adapter
 
   - name: Alertmanager [Fury Monitoring Module]
     source: quay.io/prometheus/alertmanager
@@ -24,14 +24,14 @@ images:
       - "v0.23.0"
       - "v0.24.0"
     destinations:
-      - registry.sighup.io/fury/prometheus/alertmanager
+      - ghcr.io/smerlos/prometheus/alertmanager
 
   - name: blackbox-exporter [Fury Monitoring Module]
     source: quay.io/prometheus/blackbox-exporter
     tag:
       - "v0.21.0"
     destinations:
-      - registry.sighup.io/fury/prometheus/blackbox-exporter
+      - ghcr.io/smerlos/prometheus/blackbox-exporter
 
   - name: Goldpinger [Fury Monitoring Module]
     source: docker.io/bloomberg/goldpinger
@@ -42,7 +42,7 @@ images:
       - "v3.3.0"
       - "v3.5.1"
     destinations:
-      - registry.sighup.io/fury/bloomberg/goldpinger
+      - ghcr.io/smerlos/bloomberg/goldpinger
 
   - name: Grafana side-car [Fury Monitoring Module]
     source: docker.io/kiwigrid/k8s-sidecar
@@ -56,7 +56,7 @@ images:
       - "1.19.2"
       - "1.22.2"
     destinations:
-      - registry.sighup.io/fury/kiwigrid/k8s-sidecar
+      - ghcr.io/smerlos/kiwigrid/k8s-sidecar
 
   - name: Grafana [Fury Monitoring Module]
     source: grafana
@@ -70,7 +70,7 @@ images:
       - "9.3.2"
       - "9.3.6"
     destinations:
-      - registry.sighup.io/fury/grafana/grafana
+      - ghcr.io/smerlos/grafana/grafana
 
   - name: Kubernetes RBAC Proxy [Fury Monitoring Module]
     source: quay.io/brancz/kube-rbac-proxy
@@ -80,7 +80,7 @@ images:
       - "v0.12.0"
       - "v0.14.0"
     destinations:
-      - registry.sighup.io/fury/brancz/kube-rbac-proxy
+      - ghcr.io/smerlos/brancz/kube-rbac-proxy
 
   - name: kube-state-metrics [Fury Monitoring Module]
     source: quay.io/coreos/kube-state-metrics
@@ -91,7 +91,7 @@ images:
       - "v1.9.7"
       - "v2.1.1"
     destinations:
-      - registry.sighup.io/fury/coreos/kube-state-metrics
+      - ghcr.io/smerlos/coreos/kube-state-metrics
 
   - name: kube-state-metrics [Fury Monitoring Module]
     source: k8s.gcr.io/kube-state-metrics/kube-state-metrics
@@ -101,7 +101,7 @@ images:
       - "v2.3.0"
       - "v2.5.0"
     destinations:
-      - registry.sighup.io/fury/kube-state-metrics/kube-state-metrics
+      - ghcr.io/smerlos/kube-state-metrics/kube-state-metrics
 
   - name: Metrics Server [Fury Monitoring Module]
     source: k8s.gcr.io/metrics-server/metrics-server
@@ -111,7 +111,7 @@ images:
       - "v0.5.0"
       - "v0.5.2"
     destinations:
-      - registry.sighup.io/fury/metrics-server
+      - ghcr.io/smerlos/metrics-server
 
   - name: node-exporter [Fury Monitoring Module]
     source: quay.io/prometheus/node-exporter
@@ -124,7 +124,7 @@ images:
       - "v1.3.1"
       - "v1.5.0"
     destinations:
-      - registry.sighup.io/fury/prometheus/node-exporter
+      - ghcr.io/smerlos/prometheus/node-exporter
 
   - name: Prometheus [Fury Monitoring Module]
     source: quay.io/prometheus/prometheus
@@ -138,8 +138,8 @@ images:
       - "v2.32.1"
       - "v2.36.1"
     destinations:
-      - registry.sighup.io/fury/prometheus
-      - registry.sighup.io/fury/prometheus/prometheus
+      - ghcr.io/smerlos/prometheus
+      - ghcr.io/smerlos/prometheus/prometheus
 
   - name: prometheus-operator [Fury Monitoring Module]
     source: quay.io/coreos/prometheus-operator
@@ -147,7 +147,7 @@ images:
       - "v0.30.0"
       - "v0.37.0"
     destinations:
-      - registry.sighup.io/fury/coreos/prometheus-operator
+      - ghcr.io/smerlos/coreos/prometheus-operator
 
   - name: prometheus-operator [Fury Monitoring Module]
     source: quay.io/prometheus-operator/prometheus-operator
@@ -160,7 +160,7 @@ images:
       - "v0.53.1"
       - "v0.57.0"
     destinations:
-      - registry.sighup.io/fury/prometheus-operator/prometheus-operator
+      - ghcr.io/smerlos/prometheus-operator/prometheus-operator
 
   - name: prometheus-operator config reloader [Fury Monitoring Module]
     source: quay.io/coreos/prometheus-config-reloader
@@ -168,7 +168,7 @@ images:
       - "v0.30.0"
       - "v0.37.0"
     destinations:
-      - registry.sighup.io/fury/coreos/prometheus-config-reloader
+      - ghcr.io/smerlos/coreos/prometheus-config-reloader
 
   - name: prometheus-operator config reloader [Fury Monitoring Module]
     source: quay.io/prometheus-operator/prometheus-config-reloader
@@ -181,7 +181,7 @@ images:
       - "v0.53.1"
       - "v0.57.0"
     destinations:
-      - registry.sighup.io/fury/prometheus-operator/prometheus-config-reloader
+      - ghcr.io/smerlos/prometheus-operator/prometheus-config-reloader
 
   - name: openldap [Fury Monitoring Module]
     source: docker.io/osixia/openldap
@@ -189,7 +189,7 @@ images:
       - "1.3.0"
       - "1.5.0"
     destinations:
-      - registry.sighup.io/fury/osixia/openldap
+      - ghcr.io/smerlos/osixia/openldap
 
   - name: thanos [Fury Monitoring Module]
     source: quay.io/thanos/thanos
@@ -198,7 +198,7 @@ images:
       - "v0.22.0"
       - "v0.24.0"
     destinations:
-      - registry.sighup.io/fury/thanos
+      - ghcr.io/smerlos/thanos
 
   - name: x509 certificate exporter
     source: docker.io/enix/x509-certificate-exporter
@@ -210,4 +210,4 @@ images:
       - "3.2.0"
       - "3.4.0"
     destinations:
-      - registry.sighup.io/fury/enix/x509-certificate-exporter
+      - ghcr.io/smerlos/enix/x509-certificate-exporter
