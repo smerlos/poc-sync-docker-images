@@ -21,8 +21,8 @@ jobs:
         password: ${{ secrets.REGISTRY_PASSWORD }}
     - name: Install yq
       run: |
-        echo $env:RUNNER_OS
-        echo $env:RUNNER_ARCH
+        echo ${{ runner.os }}
+        echo ${{ runner.arch }}
         ls -
         sudo apt-get update && sudo apt-get install -yqq wget
         sudo wget -q https://github.com/mikefarah/yq/releases/download/v4.30.8/yq_linux_amd64 -O /usr/bin/yq
