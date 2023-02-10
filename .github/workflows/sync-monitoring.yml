@@ -28,5 +28,5 @@ jobs:
     - name: Iterate
       run: |
         yq --version
-        docker run --rm quay.io/skopeo/stable:v1.9.2 --version
-        ./single_sync.sh modules/monitoring/images.yml false
+        sudo docker run --rm quay.io/skopeo/stable:v1.9.2 --version
+        sudo ./single_sync.sh modules/monitoring/images.yml false
