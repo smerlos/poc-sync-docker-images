@@ -23,7 +23,7 @@ jobs:
     - name: Install yq
       run: |
         sudo apt-get update && sudo apt-get install -yqq wget
-        sudo wget -q https://github.com/mikefarah/yq/releases/download/v4.30.8/yq_linux_$env:RUNNER_ARCH-O /usr/bin/yq
+        sudo wget -q https://github.com/mikefarah/yq/releases/download/v4.30.8/yq_linux_$env:RUNNER_ARCH -O /usr/bin/yq
         sudo chmod +x /usr/bin/yq
     - name: Iterate
       run: |
