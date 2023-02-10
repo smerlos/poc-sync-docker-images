@@ -4,7 +4,6 @@ on:
   push:
     branches:
       - "main"
-
 jobs:
   sync:
     runs-on: ${{ matrix.os}}
@@ -22,6 +21,9 @@ jobs:
         password: ${{ secrets.REGISTRY_PASSWORD }}
     - name: Install yq
       run: |
+        echo $env:RUNNER_OS
+        echo $env:RUNNER_ARCH
+        ls -
         sudo apt-get update && sudo apt-get install -yqq wget
         sudo wget -q https://github.com/mikefarah/yq/releases/download/v4.30.8/yq_linux_amd64 -O /usr/bin/yq
         sudo chmod +x /usr/bin/yq
@@ -29,4 +31,4 @@ jobs:
       run: |
         yq --version
         sudo docker run --rm quay.io/skopeo/stable:v1.9.2 --version
-        sudo ./single_sync.sh modules/monitoring/images.yml false
+        ./single_sync.sh modules/monitoring/images.yml false
